@@ -9,9 +9,13 @@ class MyHomePage extends StatelessWidget {
       body: LayoutBuilder(
         builder: (context, constraints) {
           if (constraints.maxWidth > 600) {
-            return Container(color: Colors.red, height: 100, width: 100);
+            return Center(
+              child: Container(color: Colors.red, height: 100, width: 100),
+            );
           } else {
-            return Container(color: Colors.yellow, height: 100, width: 100);
+            return Center(
+              child: Container(color: Colors.yellow, height: 100, width: 100),
+            );
           }
         },
       ),

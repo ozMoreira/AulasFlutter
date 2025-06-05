@@ -8,12 +8,13 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
       body: Wrap(
         spacing: 20,
-        children: [
-          Container(width: 400, height: 100, color: Colors.green),
-          Container(width: 400, height: 100, color: Colors.red),
-          Container(width: 400, height: 100, color: Colors.yellow),
-          Container(width: 400, height: 100, color: Colors.black),
-        ],
+        children: List.generate(
+          20,
+          (index) => Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(width: 20, height: 20, color: Colors.red),
+          ),
+        ),
       ),
       backgroundColor: Colors.blue,
       appBar: AppBar(title: const Text('My Home Page')),

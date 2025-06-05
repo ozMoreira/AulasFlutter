@@ -6,13 +6,14 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Container(
-          width: 400,
-          height: 400,
-          color: Colors.yellow,
-          child: Center(child: const Text('Teste da pagina 1')),
-        ),
+      body: Wrap(
+        spacing: 20,
+        children: [
+          Container(width: 400, height: 100, color: Colors.green),
+          Container(width: 400, height: 100, color: Colors.red),
+          Container(width: 400, height: 100, color: Colors.yellow),
+          Container(width: 400, height: 100, color: Colors.black),
+        ],
       ),
       backgroundColor: Colors.blue,
       appBar: AppBar(title: const Text('My Home Page')),

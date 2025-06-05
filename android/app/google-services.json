@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "964924298785",
+    "project_id": "web01oz",
+    "storage_bucket": "web01oz.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:964924298785:android:e0218667cf53c9f35ff560",
+        "android_client_info": {
+          "package_name": "com.example.web01"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYfHD5TVwzW0ijPHp1eD92kpoyJLse-60"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

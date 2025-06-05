@@ -6,15 +6,14 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Wrap(
-        spacing: 20,
-        children: List.generate(
-          20,
-          (index) => Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(width: 20, height: 20, color: Colors.red),
-          ),
-        ),
+      body: LayoutBuilder(
+        builder: (context, constraints) {
+          if (constraints.maxWidth > 600) {
+            return Container(color: Colors.red, height: 100, width: 100);
+          } else {
+            return Container(color: Colors.yellow, height: 100, width: 100);
+          }
+        },
       ),
       backgroundColor: Colors.blue,
       appBar: AppBar(title: const Text('My Home Page')),
